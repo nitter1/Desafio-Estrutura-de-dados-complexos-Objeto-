@@ -56,54 +56,39 @@ let cadastro = [
         name: "Dominic Toretto",
         birthDate: "29/08/1976",
         phoneNumber: "+1(323)039-1984",
-        friendOne: "Brian O'Conner",
-        friendTwo: "Mia Toretto",
-        frindThree: "Letty Ortiz",
-        friendFour: "Roman Pearce"
+        friends: ["Brian O'Conner", "Mia Toretto", "Letty Ortiz", "Roman Pearce"],
 
 },
     { 
         name: "Brian O'Conner",
         birthDate: "14/07/1978",
         phoneNumber: "+1(323)780-7851",
-        friendOne: "Dominic Toretto",
-        friendTwo: "Mia Toretto",
-        friendThree: "Roman Pearce",
-        friendFour: "Letty Ortiz"
+        friends: ["Dominic Toretto", "Mia Toretto", "Roman Pearce", "Letty Ortiz"]
     },
     {
         name: "Mia Toretto",
         birthDate: "26/04/1982",
         phoneNumber: "+1(323)694-9707",
-        friendOne: "Dominic Toretto",
-        friendTwo: "Brian O'Conner",
-        friendThree: "Letty Ortiz",
-        friendFour: "Roman Pearce"
+        friends: ["Dominic Toretto", "Brian O'Conner", "Letty Ortiz", "Roman Pearce"]
     },
     {
         name: "Letty Ortiz",
         birthDate: "07/09/1983",
         phoneNumber: "+1(323)011-7229",
-        friendOne: "Dominic Toretto",
-        friendTwo: "Mia Toretto",
-        friendThree: "Brian O'Conner",
-        friendFour: "Roman Pearce"
+        friends: ["Dominic Toretto", "Mia Toretto", "Brian O'Conner", "Roman Pearce"]
     },
     {
         name: "Roman Pearce",
         birthDate: "14/07/1977",
         phoneNumber: "+1(323)694-5890",
-        friendOne: "Brian O'Conner",
-        friendTwo: "Dominic Toretto",
-        friendThree: "Mia Toretto",
-        friendFour: "Letty Ortiz"
+        friends: ["Brian O'Conner", "Dominic Toretto", "Mia Toretto", "Letty Ortiz"]
     }
 ]
 console.log(cadastro)
 
 //12 - Mostre no console o nome de um amigo de cada lista.
-console.log(cadastro[0].friendOne) //Primeiro amigo da lista de Dominic Toretto = Brian
-console.log(cadastro[1].friendOne) //Primeiro amigo da lista de Brian O'Conner = Dominic
-console.log(cadastro[2].friendTwo) //Segundo amigo da lista de Mia Toretto = Brian
-console.log(cadastro[3].friendOne) //Primeiro amigo da lista de Letty Ortiz = Dominic
-console.log(cadastro[4].friendOne) //Primeiro amigo da lista de Roman Pierce = Brian
+console.log(cadastro[0].friends[0]) //Primeiro amigo da lista de Dominic Toretto = Brian
+console.log(cadastro[1].friends[0]) //Primeiro amigo da lista de Brian O'Conner = Dominic
+console.log(cadastro[2].friends[1]) //Segundo amigo da lista de Mia Toretto = Brian
+console.log(cadastro[3].friends[0]) //Primeiro amigo da lista de Letty Ortiz = Dominic
+console.log(cadastro[4].friends[0]) //Primeiro amigo da lista de Roman Pierce = Brian
